@@ -102,6 +102,7 @@ nav{
 
 .algorithms li:hover, .array-size li:hover{
     background-color: #E7F6F2;
+    color: #020024;
 }
 .visible-links{
     display: flex;
