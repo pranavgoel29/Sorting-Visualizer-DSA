@@ -1,7 +1,7 @@
 .main-div{
     height: 500px;
     width: 90vw;
-    background-color: #030031;
+    background-color: #374347;
     margin: 10px 5vw;
     border-radius: 10px;
     display: flex;
@@ -22,10 +22,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 10px;
-    background: #1A94DA;
+    background: #A5C9CA;
     padding: 20px;
     border-radius: 50%;
-    color: rgb(240, 248, 255);
+    color: #374347;
     z-index: 2;
 }
 .relative-div{
@@ -46,12 +46,12 @@
     left: 0;
     text-align: center;
     width: 100%;
-    color: #1A94DA;
+    color: #395B64;
     font-size: xx-large;
     text-shadow: 1px 1px black;
 }
 .code-div{
-    background-color: #030031;
+    background-color: #374347;
     padding: 10px 40px;
     border-radius: 20px;
     width: auto;
@@ -63,7 +63,7 @@
 .details-div{
     border-radius: 20px;
     margin: 10px;
-    background-color: #030031;
+    background-color: #374347;
     width: auto;
     flex: 50%;
     color: #ffffff;
@@ -72,8 +72,11 @@
     justify-content: center;
     align-items: center;
 }
+
+
+
 footer{
-    background-color: #030031;
+    background-color: #374347;
     margin: 0;
     padding: 10px;
     display: flex;
@@ -99,7 +102,7 @@ footer{
     color: #1A94DA;
 }
 .fa-heart{
-    color: #1A94DA;
+    color: #A5C9CA;
     transition: 2s;
     animation: heartBeat 2s ease-in-out infinite;
 }

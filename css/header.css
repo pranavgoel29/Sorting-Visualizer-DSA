@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #05004e;
+    background-color: #2C3333;
 }
 *{ 
     box-sizing: border-box;
@@ -18,7 +18,7 @@ nav{
     min-height: 8vh;
     min-width: 100vw;
     z-index: 4;
-    background-color: #030031;
+    background-color: #374347;
     color: white;
     position: sticky;
 }
@@ -70,7 +70,7 @@ nav{
     width: 200px;
     height: 290px;
     list-style: none;
-    background-color: #030031;
+    background-color: #395B64;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -101,7 +101,7 @@ nav{
 }
 
 .algorithms li:hover, .array-size li:hover{
-    background-color: #1A94DA;
+    background-color: #E7F6F2;
 }
 .visible-links{
     display: flex;
@@ -115,6 +115,7 @@ nav{
     transform: translateY(-10px);
     transition: all 0.4s ease;
 }
+
 #rand-button{
     width: auto;
     padding: 10px 20px;
@@ -137,7 +138,7 @@ nav{
         margin: 60px 0px;
         padding: 10px 20px;
         z-index: 1;
-        background: #030031;
+        background: #545f63;
         display: block;
         width: auto;
         transform: translateX(200%);
