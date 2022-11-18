@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A Website to demonstrate the working of different types of sorting">
+    <meta name="title" content="Sorting Visualizer by Pranav">
+    <meta name="author" content="Pranav Goel">
+    <meta name="country" content="IN">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#030031">
+    <meta name="keywords"
+        content="sorting visualizer, sorting techniques, learn algorithms, learn sorting, sorting demo">
+    <title>Sorting Visualizer by Pranav</title>
+
+    <!-- Facebook meta tags -->
+    <meta property="og:type" content="Website" />
+    <meta property="og:title" content="Sorting Visualizer by Pranav" />
+    <meta property="og:description" content="A Website to demonstrate the working of different types of sorting" />
+    <meta property="og:image" content="https://sorting-visualizer-dsa.vercel.app/screenshots/2.jpeg" />
+    <meta property="og:url" content="https://sorting-visualizer-dsa.vercel.app/">
+
+    <!-- twitter meta tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sorting-visualizer-dsa.vercel.app/">
+    <meta property="twitter:title"
+        content="Sorting Visualizer by Pranav">
+    <meta property="twitter:description"
+        content="A Website to demonstrate the working of different types of sorting">
+    <meta property="twitter:image"
+        content="https://sorting-visualizer-dsa.vercel.app/screenshots/2.jpeg">
+    
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/atom-one-dark.min.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <nav id="header" class="helloheader">
+        <div class="logo">Sorting Visualizer</div>
+        <ul class="nav-links">
+            <li class="lis">
+                <div class="algorithms">
+                    <button onclick="showDropDown('algorithms')">Select an Algorithm 
+                        <i class="fas fa-angle-down"></i></button>
+                    <ul class="invisible-links">
+                        <li onclick="selectthis(this,'algorithms')">Bubble Sort</li>
+                        <li onclick="selectthis(this,'algorithms')">Insertion Sort</li>
+                        <li onclick="selectthis(this,'algorithms')">Selection Sort</li>
+                        <li onclick="selectthis(this,'algorithms')">Quick Sort</li>
+                        <li onclick="selectthis(this,'algorithms')">Merge Sort</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="lis">
+                <div class="array-size">
+                    <button onclick="showDropDown('array-size')">Size of Array <i
+                            class="fas fa-angle-down"></i></button>
+                    <ul class="invisible-links">
+                        <li onclick="selectthis(this,'array-size')">5</li>
+                        <li onclick="selectthis(this,'array-size')">10</li>
+                        <li onclick="selectthis(this,'array-size')">20</li>
+                        <li onclick="selectthis(this,'array-size')">30</li>
+                        <li onclick="selectthis(this,'array-size')">50</li>
+                        <li onclick="selectthis(this,'array-size')">75</li>
+                        <li onclick="selectthis(this,'array-size')">100</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="lis">
+                <button id="rand-button" onclick="setArray()">Randomize</button>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="main-div">
+        <p id="instruction"></p>
+    </div>
+    <div class="relative-div">
+        <span onclick="beginSorting(this)" class="round-button"><i class="fa fa-play fa-2x"></i></span>
+    </div>
+
+    <div class="data-div">
+        <div class="code-div">
+            <pre>
+                <code id="code">
+                    <H1>Code</H1>
+                </code>
+            </pre>
+        </div>
+        <div class="details-div">
+            <div id="speedDiv">
+                <p>Speed:
+                <p id='speedp'>550</p>
+                </p>
+            </div>
+            <input onchange="changeSpeed(this)" id="speed" type="range" min="100" max="1000" value="550">
+            <h1 id='algoName'>Algo Name</h1>
+            <p id='complexity'>
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>Made with<i class="fas fa-heart"></i> by <a class="footer-name" target="_blank" href="https://pranavgoel29.vercel.app/">Pranav Goel</a></p>
+        <div>
+            <a href="https://github.com/pranavgoel29/Sorting-Visualizer-DSA" target="_blank" class="github-link"><i class="fab fa-github"></i> Github Repo</a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/js/algo.js"></script>
+    <script type="text/javascript" src="/js/header.js"></script>
+    <script type="text/javascript" src="/js/highlight.min.js"></script>
+</body>
+
+</html>

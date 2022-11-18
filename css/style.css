@@ -1,0 +1,121 @@
+.main-div{
+    height: 500px;
+    width: 90vw;
+    background-color: #030031;
+    margin: 10px 5vw;
+    border-radius: 10px;
+    display: flex;
+    overflow-x: auto;
+}
+#speedDiv{
+    display: flex;
+}
+.bar{
+    margin: 0px 2px;
+    border-radius: 0px 0px 20px 20px;
+    background: rgb(201, 201, 201);
+    min-width: 1px;
+}
+.round-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 10px;
+    background: #1A94DA;
+    padding: 20px;
+    border-radius: 50%;
+    color: rgb(240, 248, 255);
+    z-index: 2;
+}
+.relative-div{
+    position: relative;
+}
+.data-div{
+    display: flex;
+    min-height: 70vh;
+    width: 90vw;
+    position: relative;
+    justify-content: center;
+    margin: 10px 5vw;
+}
+#instruction{
+    display: none;
+    position: absolute;
+    top: 10;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: #1A94DA;
+    font-size: xx-large;
+    text-shadow: 1px 1px black;
+}
+.code-div{
+    background-color: #030031;
+    padding: 10px 40px;
+    border-radius: 20px;
+    width: auto;
+    flex: 50%;
+    margin: 10px;
+    color: aliceblue;
+    overflow-x: auto;
+}
+.details-div{
+    border-radius: 20px;
+    margin: 10px;
+    background-color: #030031;
+    width: auto;
+    flex: 50%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color: #030031;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+.footer-name{
+    text-decoration: none;
+    color: #ffffff;
+}
+.github-link{
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer-name:hover{
+    text-decoration: underline;
+    color: #1A94DA;
+}
+.github-link:hover{
+    text-decoration: underline;
+    color: #1A94DA;
+}
+.fa-heart{
+    color: #1A94DA;
+    transition: 2s;
+    animation: heartBeat 2s ease-in-out infinite;
+}
+@media screen and (max-width: 768px){
+    .data-div{
+        flex-direction: column;
+    }
+}
+@keyframes heartBeat{
+    0%{
+        font-size: 15px;
+    }
+    50%{
+        font-size: 19px;
+    }
+    100%{
+        font-size: 15px;
+    }
+}
