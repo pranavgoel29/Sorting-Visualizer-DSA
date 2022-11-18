@@ -1,8 +1,8 @@
 .main-div{
     height: 500px;
-    width: 90vw;
+    width: 89vw;
     background-color: #374347;
-    margin: 10px 5vw;
+    margin: 10px 5.5vw;
     border-radius: 10px;
     display: flex;
     overflow-x: auto;
@@ -33,7 +33,7 @@
 }
 .data-div{
     display: flex;
-    min-height: 70vh;
+    min-height: 40vh;
     width: 90vw;
     position: relative;
     justify-content: center;
@@ -42,13 +42,14 @@
 #instruction{
     display: none;
     position: absolute;
+    margin-top: 50px;
     top: 10;
     left: 0;
     text-align: center;
     width: 100%;
-    color: #395B64;
+    color: #000000;
     font-size: xx-large;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px rgb(164, 234, 255);
 }
 .code-div{
     background-color: #374347;
